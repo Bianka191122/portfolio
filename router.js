@@ -1,4 +1,5 @@
 import { about } from "./about.js";
+import { home } from "./home.js";
 
 const routes = {
     "":"home.html",
@@ -20,6 +21,7 @@ function navigate(){
     console.log(hash);
     let page = routes[hash]
     loadPage(page,document.querySelector('main'))
+    console.log(page);
 }
 
 async function loadPage(url, domObj){
@@ -27,4 +29,5 @@ async function loadPage(url, domObj){
     const html = await response.text()
     domObj.innerHTML = html
     if(url=="about.html")about()
+    else if(url=="home.html") home()
 }
