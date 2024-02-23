@@ -1,20 +1,18 @@
 export const home = () => {
-    const words = ["lelket", "csak", "egyszer", "kapunk."];
+    const words = ["Álmok", "formálják", "a", "valóságot."];
 
     const panelBackgrounds = [
-        "https://source.unsplash.com/gYl-UtwNg_I/1500x1500",
-        "https://source.unsplash.com/rFKUFzjPYiQ/1500x1500",
-        "https://images.unsplash.com/photo-1465188162913-8fb5709d6d57",
-        "https://source.unsplash.com/ITjiVXcwVng/1500x1500",
-        "https://source.unsplash.com/3MNzGlQM7qs/1500x1500",
-        "https://source.unsplash.com/tuEtpjghVmg/1500x1500",
+        "https://images.unsplash.com/photo-1582769923195-c6e60dc1d8dc?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1611625105602-42ee06be977e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1610209455607-89e8b3e0e393?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1592666452220-529326e2588e?q=80&w=1804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ];
 
     words.forEach((item) => {
         console.log(item.index);
         document.querySelector(".panels").innerHTML += `
-    <div class="panel">${item}</div>
-    `;
+        <div class="panel">${item}</div>
+        `;
     });
 
     const panelNodeList = document.querySelectorAll(".panel");
